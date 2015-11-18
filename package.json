@@ -1,0 +1,38 @@
+{
+  "name": "react-packery-component",
+  "version": "1.0.0",
+  "main": "./lib/index",
+  "description": "A Packery component for React.js",
+  "dependencies": {
+    "packery": "eiriklv/packery",
+    "imagesloaded": "eiriklv/imagesloaded"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/eiriklv/react-packery-component.git"
+  },
+  "keywords": [
+    "react",
+    "mixin",
+    "masonry",
+    "packery",
+    "isotope",
+    "react-component"
+  ],
+  "author": "Eirik Vullum <evullum@gmail.com> (http://www.evconsult.no/)",
+  "contributors": [
+    {
+      "name": "Marwan Butrous",
+      "email": "marwan.butrous@protonmail.ch"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/eiriklv/react-packery-component/issues"
+  },
+  "homepage": "https://github.com/eiriklv/react-packery-component",
+  "license": "MIT"
+}
