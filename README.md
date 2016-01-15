@@ -12,6 +12,9 @@ React >= 0.14.x
 #### Live demo:
 [hearsay.me](http://www.hearsay.me)
 
+#### Installation:
+` $ npm install react-packery-component --save`
+
 #### Usage:
 
 * The component bundles Packery, so no additional dependencies needed!
