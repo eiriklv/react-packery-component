@@ -21,12 +21,12 @@ React >= 0.14.x
 * You can optionally include Packery as a script tag if there should be any reason for doing so:
 `<script src='//cdnjs.cloudflare.com/ajax/libs/packery/1.3.0/packery.pkgd.min.js' />`
 
-* To use the component just require the module and inject `React`
-* Example code:
+* To use the component just require the module
+* Example es5 code:
 
 ```js
 var React = require('react');
-var Packery = require('react-packery-component')(React);
+var Packery = require('react-packery-component');
 
 var packeryOptions = {
     transitionDuration: 0
@@ -57,3 +57,42 @@ var Gallery = React.createClass({
 
 module.exports = Gallery;
 ```
+* Example es2015 code:
+
+```js
+import React,{Component} from 'react';
+import Packery from 'react-packery-component';
+
+const packeryOptions = {
+    transitionDuration: 0
+};
+
+class Gallery extends Component {
+    constructor() {
+        super();
+    }
+    render() {
+        const childElements = this.props.elements.map((element) => {
+           return (
+                <li className="image-element-class">
+                    <img src={element.src} />
+                </li>
+            );
+        });
+
+        return (
+            <Packery
+                className={'my-gallery-class'} // default ''
+                elementType={'ul'} // default 'div'
+                options={packeryOptions} // default {}
+                disableImagesLoaded={false} // default false
+            >
+                {childElements}
+            </Packery>
+        );
+    }
+});
+
+export default Gallery;
+```
+
