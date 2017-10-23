@@ -4,6 +4,7 @@
   "main": "./lib/index",
   "description": "A Packery component for React.js",
   "dependencies": {
+    "create-react-class": "^15.6.2",
     "imagesloaded": "eiriklv/imagesloaded",
     "packery": "eiriklv/packery",
     "prop-types": "^15.6.0"
